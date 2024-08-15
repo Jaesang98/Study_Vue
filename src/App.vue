@@ -1,36 +1,79 @@
 <template>
   <div class="header">
     <ul class="header-button-left">
-      <li>Cancel</li>
+      <li @click="tabtype--">Cancel</li>
     </ul>
-    <ul class="header-button-right">
-      <li>Next</li>
+    <ul class="header-button-right" >
+      <li v-if="tabtype==1" @click="tabtype++">Next</li>
+      <li v-if="tabtype==2" @click="publish">발행</li>
     </ul>
     <img src="./assets/logo.png" class="logo" />
   </div>
 
-  <Container :postData = "postData"/>
+  <Container :postData="postData" :tabtype="tabtype" :imageurl="imageurl" @write="content = $event"/>
+  <button @click="more">더보기</button>
 
   <div class="footer">
     <ul class="footer-button-plus">
-      <input type="file" id="file" class="inputfile" />
+      <input @change="upload" type="file" id="file" class="inputfile" />
       <label for="file" class="input-plus">+</label>
     </ul>
   </div>
 </template>
 
 <script>
-import Container from '@/components/Container.vue';
-import postData from '@/assets/postData'
+import Container from "@/components/Container.vue";
+import postData from "@/assets/postData";
+import axios from "axios";
 export default {
   name: "App",
   data() {
     return {
-      postData : postData
-    }
+      postData: postData,
+      count: 0,
+      tabtype : 0,
+      imageurl : "",
+      content : "",
+    };
   },
+
   components: {
-    Container : Container
+    Container: Container,
+  },
+
+  methods: {
+    more() {
+      axios
+        .get(`https://codingapple1.github.io/vue/more${this.count}.json`)
+        .then((res) => {
+          this.postData.push(res.data);
+          this.count++;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+
+    upload(e){
+      let file = e.target.files;
+      this.imageurl = URL.createObjectURL(file[0]);
+      this.tabtype++;
+    },
+
+    publish() {
+      var post = {
+        name: "Kim Hyun",
+        userImage: "https://picsum.photos/100?random=3",
+        postImage: this.imageurl,
+        likes: 36,
+        date: "May 15",
+        liked: false,
+        content: this.ontent,
+        filter: "perpetua"
+      };
+      this.postData.unshift(post);
+      this.tabtype = 0;
+    }
   },
 };
 </script>
