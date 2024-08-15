@@ -1,24 +1,9 @@
-# vuestargram
+##part 3-1 뷰 인스타그램 프로젝트 생성 & 레이아웃 만들기
+	기본설정을함
+	
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+##part 3-2 저번시간 숙제 & style 속성 데이터바인딩
+	저번시간 숙제함 (부모가 자식의 자식에게 데이터를 보내는것)
+	
+	1. style
+		html에서 스타일을 쓸떄 -(대쉬)를 사용할 수 없어서 기존 css에서 작성하던것과 다르게 작성해야함
