@@ -7,32 +7,47 @@
 
     <!-- 필터선택페이지 -->
     <div v-if="tabtype == 1">
-      <div class="upload-image" :style="`background-image:url(${imageurl})`"></div>
+      <div :class="`upload-image ${filter}`" :style="`background-image:url(${imageurl})`"></div>
       <div class="filters">
-        <div class="filter-1"></div>
-        <div class="filter-1"></div>
-        <div class="filter-1"></div>
-        <div class="filter-1"></div>
-        <div class="filter-1"></div>
+        <span v-for="(filters,idx) in filters" :key="idx">
+          <FilterBox :imageurl="imageurl" :filters="filters">{{ filters }}</FilterBox>
+        </span>
       </div>
     </div>
 
     <!-- 글작성페이지 -->
     <div v-if="tabtype == 2">
-      <div class="upload-image"></div>
+      <div :class="`upload-image ${filter}`" :style="`background-image:url(${imageurl})`"></div>
       <div class="write">
-        <textarea class="write-box" @input="$emit('content' , $event.target.value)">write!</textarea>
+        <textarea class="write-box" @input="$emit('content' , $event.target.value)"></textarea>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Post from '@/components/Post.vue'
+import Post from '@/components/Post.vue';
+import FilterBox from '@/components/FilterBox.vue';
+
 export default {
   name: 'containerVue',
+  data() {
+    return {
+      filters: ["aden", "_1977", "brannan", "brooklyn", "clarendon", "earlybird", "gingham", "hudson",
+        "inkwell", "kelvin", "lark", "lofi", "maven", "mayfair", "moon", "nashville", "perpetua",
+        "reyes", "rise", "slumber", "stinson", "toaster", "valencia", "walden", "willow", "xpro2"],
+      filter: "",
+    }
+  },
+  mounted() {
+    this.emitter.on('filter', (value) => {
+      this.filter = value;
+    });
+  },
+
   components: {
     Post: Post,
+    FilterBox: FilterBox
   },
   props: {
     postData: Array,

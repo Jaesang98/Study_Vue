@@ -10,7 +10,7 @@
     <img src="./assets/logo.png" class="logo" />
   </div>
 
-  <Container :postData="postData" :tabtype="tabtype" :imageurl="imageurl" @write="content = $event"/>
+  <Container :postData="postData" :tabtype="tabtype" :imageurl="imageurl" @content="content = $event"/>
   <button @click="more">더보기</button>
 
   <div class="footer">
@@ -34,7 +34,14 @@ export default {
       tabtype : 0,
       imageurl : "",
       content : "",
+      filterApp : ""
     };
+  },
+  
+  mounted(){
+    this.emitter.on('filter', (value)=>{
+        this.filterApp = value;
+    });
   },
 
   components: {
@@ -61,6 +68,7 @@ export default {
     },
 
     publish() {
+      console.log(this.filterApp)
       var post = {
         name: "Kim Hyun",
         userImage: "https://picsum.photos/100?random=3",
@@ -68,8 +76,8 @@ export default {
         likes: 36,
         date: "May 15",
         liked: false,
-        content: this.ontent,
-        filter: "perpetua"
+        content: this.content,
+        filter: this.filterApp
       };
       this.postData.unshift(post);
       this.tabtype = 0;
