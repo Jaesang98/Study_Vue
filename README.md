@@ -150,3 +150,15 @@
 		vue.config에서 publicPath 공간에 /님이만든 repository이름을 적어주면됩니다
 		
 		이거 그 외 또 설정하는거 있는데 그거는 내일 보자고!!
+		그외 설정은 history: createWebHistory(process.env.BASE_URL), 이렇게 적어줘야한다
+  		그리고 만약 그냥 APP.vue로 배포를 한다면  
+
+		const { defineConfig } = require('@vue/cli-service')
+		
+		module.exports = defineConfig({
+		  transpileDependencies: true,
+		  publicPath: process.env.NODE_ENV === 'production'
+		    ? './'
+		    : '/'
+		})
+	이렇게 경로를 바꿔줘야한다
