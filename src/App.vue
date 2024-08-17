@@ -10,6 +10,17 @@
     <img src="./assets/logo.png" class="logo" />
   </div>
 
+  <!-- <h3>안녕 {{ myName }}</h3>
+  <p>나이는 {{ myAge }}</p>
+  <button @click="$store.commit('이름변경')">이름버튼</button>
+  <button @click="$store.commit('나이번경')">나이버튼</button>
+
+  <button @click="$store.dispatch('getData')">더보기2</button>
+
+  <p>
+    {{ $store.state.more }}
+  </p> -->
+
   <Container :postData="postData" :tabtype="tabtype" :imageurl="imageurl" @content="content = $event"/>
   <button @click="more">더보기</button>
 
@@ -25,13 +36,14 @@
 import Container from "@/components/Container.vue";
 import postData from "@/assets/postData";
 import axios from "axios";
+import {mapState} from 'vuex';
 export default {
   name: "App",
   data() {
     return {
       postData: postData,
       count: 0,
-      tabtype : 0,
+      tabtype : 3,
       imageurl : "",
       content : "",
       filterApp : ""
@@ -46,6 +58,13 @@ export default {
 
   components: {
     Container: Container,
+  },
+
+  computed: {
+    ...mapState({
+      myName: 'name',
+      myAge: 'age'
+    })
   },
 
   methods: {

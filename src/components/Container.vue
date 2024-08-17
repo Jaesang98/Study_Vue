@@ -22,12 +22,17 @@
         <textarea class="write-box" @input="$emit('content' , $event.target.value)"></textarea>
       </div>
     </div>
+
+    <div v-if="tabtype == 3">
+      <MyPage></MyPage>
+    </div>
   </div>
 </template>
 
 <script>
 import Post from '@/components/Post.vue';
 import FilterBox from '@/components/FilterBox.vue';
+import MyPage from '@/components/MyPage.vue';
 
 export default {
   name: 'containerVue',
@@ -47,7 +52,8 @@ export default {
 
   components: {
     Post: Post,
-    FilterBox: FilterBox
+    FilterBox: FilterBox,
+    MyPage: MyPage
   },
   props: {
     postData: Array,
