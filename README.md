@@ -1,4 +1,4 @@
-part 1-1 카카오가 리액트 냅두고 왜 Vue 쓰는지 알려드림 자식 으로 바뀌었는지 테스트
+## part  1-1 카카오가 리액트 냅두고 왜 Vue 쓰는지 알려드림 자식 으로 바뀌었는지 테스트
 
 	1. vue를 사용하는 이유
 
@@ -16,7 +16,7 @@ part 1-1 카카오가 리액트 냅두고 왜 Vue 쓰는지 알려드림 자식 
 
 
 
-part 1-2 개발환경 셋팅과 Vue 3 설치 (자주겪는 에러 포함)
+## part  1-2 개발환경 셋팅과 Vue 3 설치 (자주겪는 에러 포함)
 
 	1. 설치 용어
 
@@ -48,7 +48,7 @@ part 1-2 개발환경 셋팅과 Vue 3 설치 (자주겪는 에러 포함)
 
 
 
-part 1-3 HTML에 데이터 꽂아넣는 Vue 데이터바인딩 문법
+## part  1-3 HTML에 데이터 꽂아넣는 Vue 데이터바인딩 문법
 
 	1. 데이터 바인딩
 
@@ -86,7 +86,7 @@ part 1-3 HTML에 데이터 꽂아넣는 Vue 데이터바인딩 문법
 
 
 
-part 1-4 리액트보다 100배 쉬운 Vue 반복문 v-for
+## part  1-4 리액트보다 100배 쉬운 Vue 반복문 v-for
 
 	1. 반복문 문법
 
@@ -98,7 +98,7 @@ part 1-4 리액트보다 100배 쉬운 Vue 반복문 v-for
 
 
 
-part 1-5 Vue 이벤트 핸들러로 click 감지하기 (허위매물 신고버튼 만들기)
+## part  1-5 Vue 이벤트 핸들러로 click 감지하기 (허위매물 신고버튼 만들기)
 
 	1. 클릭 이벤트
 
@@ -120,7 +120,7 @@ part 1-5 Vue 이벤트 핸들러로 click 감지하기 (허위매물 신고버�
 
 
 
-part 1-6 v-if 와 모달창 만들기 (Vue에서 동적인 UI 만드는 법)
+## part  1-6 v-if 와 모달창 만들기 (Vue에서 동적인 UI 만드는 법)
 
 	1. 모달창 동적 UI 스텝
 
@@ -132,7 +132,7 @@ part 1-6 v-if 와 모달창 만들기 (Vue에서 동적인 UI 만드는 법)
 
 
 
-part 1-7 실제 데이터를 박아넣어 상품목록을 만들자 (import / export)
+## part  1-7 실제 데이터를 박아넣어 상품목록을 만들자 (import / export)
 
 	1. 임포트 하는 방법
 
@@ -148,7 +148,7 @@ part 1-7 실제 데이터를 박아넣어 상품목록을 만들자 (import / ex
 
 
 
-part 1-8 모달창 내에 상세페이지 만들기
+## part  1-8 모달창 내에 상세페이지 만들기
 
 	1. 모달창안에 상세 스텝
 
@@ -166,7 +166,7 @@ part 1-8 모달창 내에 상세페이지 만들기
 
 
 
-part 1-9 HTML 복잡해보이면 컴포넌트 Component 만들어 쓰셈
+## part  1-9 HTML 복잡해보이면 컴포넌트 Component 만들어 쓰셈
 
 	1. 컴포넌트 사용법
 
@@ -202,7 +202,7 @@ part 1-9 HTML 복잡해보이면 컴포넌트 Component 만들어 쓰셈
 
 
 
-part 1-10 부모가 가진 데이터를 자식이쓰고 싶으면 props로 전해주셈
+## part  1-10 부모가 가진 데이터를 자식이쓰고 싶으면 props로 전해주셈
 
 	1. props - 부모에서 자식에게 데이터를 넘겨줄 때 사용
 
@@ -226,7 +226,7 @@ part 1-10 부모가 가진 데이터를 자식이쓰고 싶으면 props로 전�
 
 
 
-part 1-11 props 나머지 내용 조금 & 저번시간 숙제
+## part  1-11 props 나머지 내용 조금 & 저번시간 숙제
 
 	1. 컴포넌트 반복문 취향차이
 
@@ -238,7 +238,7 @@ part 1-11 props 나머지 내용 조금 & 저번시간 숙제
 
 
 
-part 1-12 자식이 부모데이터 바꾸고 싶으면 custom event 로 메세지만 주십쇼
+## part  1-12 자식이 부모데이터 바꾸고 싶으면 custom event 로 메세지만 주십쇼
 
 	1. props로 받은 데이터 수정
 
@@ -264,7 +264,7 @@ part 1-12 자식이 부모데이터 바꾸고 싶으면 custom event 로 메세�
 
 
 
-part 1-13 사용자의 input을 받는 법 (v-model)
+## part  1-13 사용자의 input을 받는 법 (v-model)
 
 	1. 인풋의 value값 가져오기
 
@@ -276,7 +276,7 @@ part 1-13 사용자의 input을 받는 법 (v-model)
 
 
 
-part 1-14 watcher로 데이터 감시하는 법
+## part  1-14 watcher로 데이터 감시하는 법
 
 	1. watcher사용법
 
@@ -300,7 +300,7 @@ part 1-14 watcher로 데이터 감시하는 법
 
 
 
-part 1-15 Vue에서 매끈한 UI 애니메이션 주는 법 2개
+## part  1-15 Vue에서 매끈한 UI 애니메이션 주는 법 2개
 
 	transition 사용
 
@@ -312,7 +312,7 @@ part 1-15 Vue에서 매끈한 UI 애니메이션 주는 법 2개
 
 
 
-part 1-16 상품정렬기능과 데이터 원본 보존
+## part  1-16 상품정렬기능과 데이터 원본 보존
 
 	1. 원본 보존
 
@@ -324,7 +324,7 @@ part 1-16 상품정렬기능과 데이터 원본 보존
 
 
 
-part 1-17 Vue의 라이프사이클을 어디다 쓰냐면
+## part  1-17 Vue의 라이프사이클을 어디다 쓰냐면
 
 	1. 라이프사이클
 
@@ -374,7 +374,7 @@ part 1-17 Vue의 라이프사이클을 어디다 쓰냐면
 
 
 ---------------------------------
-##part 2-1 Blog 프로젝트 생성과 뷰에서 Bootstrap 4, 5 사용법
+## part 2-1 Blog 프로젝트 생성과 뷰에서 Bootstrap 4, 5 사용법
 	1. bootstrap 설치
 		1) https://getbootstrap.kr/docs/5.3/getting-started/introduction/ 참고
 		
@@ -384,11 +384,11 @@ part 1-17 Vue의 라이프사이클을 어디다 쓰냐면
 				import 'bootstrap/dist/css/bootstrap.min.css'
 				
 				
-##part 2-2 블로그 글목록을 만들어보자 & 데이터바인딩, props 복습
+## part 2-2 블로그 글목록을 만들어보자 & 데이터바인딩, props 복습
 	복습하는 내용
 	
 	
-##part 2-3 vue-router 설치와 기본 라우팅
+## part 2-3 vue-router 설치와 기본 라우팅
 	1. 라우터 설치 및 적용
 		1) npm install vue-router@4
 		2) router.js 코드 넣기
@@ -418,7 +418,7 @@ part 1-17 Vue의 라이프사이클을 어디다 쓰냐면
 			router-view사용 => props전송가능
 			
 			
-##part 2-4 상세페이지 200만개 만들기 (URL 파라미터)
+## part 2-4 상세페이지 200만개 만들기 (URL 파라미터)
 	1. 부트스트랩을 설치 시 사용하기 좋은것
 		1) mt mb ml 등 마진과 패딩을 클래스명 만으로 줄 수 있다
 		
@@ -436,7 +436,7 @@ part 1-17 Vue의 라이프사이클을 어디다 쓰냐면
 			=> 이건 무조건 제일 마지막
 			
 			
-##part 2-5 심심할까봐 소개하는 Nested routes & push 함수
+## part 2-5 심심할까봐 소개하는 Nested routes & push 함수
 	1. Nested routes
 		1) router.js에서 children을 생성
 			{
@@ -460,7 +460,7 @@ part 1-17 Vue의 라이프사이클을 어디다 쓰냐면
 		그 외에도 go back 등 많은 기능이 있는데 그거는 필요할떄 찾기
 		
 		
-##part 2-6 라우터 나머지 기능들 (hash mode, guards)
+## part 2-6 라우터 나머지 기능들 (hash mode, guards)
 	1. 라우터 해쉬
 		기본 history는 createWebHistory인데 이걸 createWebHashHistory로 바꾸면
 		URL에 전부 #이 붙은 채로 시작
@@ -521,7 +521,7 @@ part 1-17 Vue의 라이프사이클을 어디다 쓰냐면
 			특정 페이지로 접속했을 때 ajax 요청하고 그럴 일이 있으면 저기다가 쓰시면 됩니다
 			
 			
-##part 2-7 만든 Vue 사이트 build & Github Pages로 배포하려면
+## part 2-7 만든 Vue 사이트 build & Github Pages로 배포하려면
 	1. 처음 경로를 다르게 하고싶다면 (App.vue가아닌 다른 페이지를 호출)
 		vue.config에서 publicPath 공간에 /님이만든 repository이름을 적어주면됩니다
 		
